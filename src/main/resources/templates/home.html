@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to Task Manager</title>
+</head>
+<body>
+<h1>Welcome to Task Manager</h1>
+<p>You are logged in as <span th:text="${user.username}"></span>.</p>
+<form th:action="@{/logout}" method="post">
+  <input type="submit" value="Logout"/>
+</form>
+</body>
+</html>
